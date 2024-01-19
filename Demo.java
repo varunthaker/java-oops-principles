@@ -34,15 +34,15 @@ class Demo
 
         // Inheritance
 
-        // 1. From Parent Class 
+        // 2. From Parent Class 
         Calculator cal = new Calculator();
         
         int addition = cal.add(5, 3);
         int subtraction = cal.subtract(10, 5);
         
-
         System.out.println("Output from Parent class " + addition + " " + subtraction);
 
+        // 1. From Child Class 
         AdvanceCalculator advCal = new AdvanceCalculator();
         int add = advCal.add(5,5);
         int sub = advCal.subtract(5, 5);
