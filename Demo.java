@@ -18,18 +18,40 @@ class Human
  
 }
 
-
 class Demo 
 {
         public static void main(String a[]) 
     {   
-        Human obj1 = new Human();
+       
+        //Encapsulation
+        // Human obj1 = new Human();
 
-        obj1.setAge(29);
-        obj1.setName("Mann");
+        // obj1.setAge(29);
+        // obj1.setName("Mann");
 
-        System.out.println(obj1.getName() + " Your Age is " + obj1.getAge());
-    
+        // System.out.println(obj1.getName() + " Your Age is " + obj1.getAge());
+
+
+        // Inheritance
+
+        // 1. From Parent Class 
+        Calculator cal = new Calculator();
+        
+        int addition = cal.add(5, 3);
+        int subtraction = cal.subtract(10, 5);
+        
+
+        System.out.println("Output from Parent class " + addition + " " + subtraction);
+
+        AdvanceCalculator advCal = new AdvanceCalculator();
+        int add = advCal.add(5,5);
+        int sub = advCal.subtract(5, 5);
+        int multiplication = advCal.multiplication(5, 5);
+        int division = advCal.division(5, 5);
+
+        System.out.println("Output from inheritence class "+ add + " "+ sub + " "+multiplication + " "+division );
+
+
     }
 }
 
